@@ -1,1 +1,12 @@
-.DS_Store
+# Ignore everything by default
+*
+
+# Allow directory traversal
+!*/
+
+# Track PowerShell scripts
+!*.ps1
+
+# Keep repo metadata
+!.gitignore
+!README.md

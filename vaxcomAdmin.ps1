@@ -1,7 +1,7 @@
 #Requires -Version 5.1
 <#
  Access Manager – LABOPS/OpsPortal (PRIMARY/SECONDARY) – WPF GUI (ODBC/DSN)
- Author: Andy Sendouw (tool built with ChatGPT)
+ Author: Andy Sendouw
  Last Updated: 2025-10-28
 
  Highlights:

@@ -18,17 +18,12 @@ This repository contains refactored versions of my in-house automation utilities
 | `LargeFileTransfer.ps1` | Guided Robocopy wrapper that normalises admin-share paths, performs dry runs, and captures logs. |
 | `Collect-BSOD-Diag.ps1` | One-click collector that snaps system info, drivers, services, and installed programs after a crash. |
 | `refresh.ps1` | Endpoint imaging post-task that mounts a deployment share, copies provisioning assets, applies cipher fixes, enables BitLocker escrow, and runs gpupdate. |
-| `registry-templates/lab-odbc-sample.reg`, `sebia registry` | Sanitised registry templates for ODBC DSNs and serial-instrument software. |
-| `samples/bsod.log` | Example output from the diagnostic collector for portfolio demonstrations. |
-
 ## Getting Started
 
 1. Clone the repository and open an elevated PowerShell session.
 2. Replace the placeholder UNC roots (`\\fileserver01`), DSN names (`LAB_PRIMARY`, `LAB_SECONDARY`), and domain groups (`CONTOSO\\...`) with values from your test environment. Each script keeps its configuration at the top, so a single edit block is usually enough.
 3. For GUI experiences (`AccessManager`, `liveMigrationTool`, `RoboCopy`), launch via `powershell.exe -ExecutionPolicy Bypass -File .\\ScriptName.ps1`. Console-only utilities can be dot-sourced or invoked directly.
-4. Optional resources:
-   - Import the sample registry templates before running DSN-dependent tooling.
-   - Review `samples/bsod.log` to understand the data captured by the collector.
+4. Review each script header for environment variables and update the placeholders before running in production.
 
 ## Highlights
 
@@ -36,4 +31,4 @@ This repository contains refactored versions of my in-house automation utilities
 - **Production-hardened ergonomics** – elevation and STA enforcement, logging, error trapping, and WhatIf support mirror real enterprise practices.
 - **Documented flows** – each script prints instructions or exposes menus to guide technicians through migrations, imaging, and database maintenance.
 
-Feel free to fork the repo and adapt the tooling to your own environment. If you have questions about any specific workflow or want to see the original production variants, reach out via the contact details on my résumé.
+Feel free to fork the repo and adapt the tooling to your own environment. More of my work is available at [sendouw.com](https://sendouw.com); reach out there if you’d like deeper dives into any workflow.

@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\VB and VBA Program Settings\Sebia]
+
+[HKEY_CURRENT_USER\Software\VB and VBA Program Settings\Sebia\Default]
+"RawDSN"="lab-instrument"
+"RawConnection"="uid=INSTRUMENT_USER;pwd=REPLACE_ME"
+"CommPort"="3"
+"Settings"="9600,n,8,1"
+"Timeout"="3000"
+"Retry"="1"
+"Checksum"="1"
+"SessionLog"="No"
+
+[HKEY_CURRENT_USER\Software\VB and VBA Program Settings\Sebia\VAL]
+"RawDSN"="lab-instrument-val"
+"RawConnection"="uid=INSTRUMENT_USER;pwd=REPLACE_ME"
+"CommPort"="3"
+"Settings"="9600,n,8,1"
+"Timeout"="3000"
+"Retry"="1"
+"Checksum"="1"
+"SessionLog"="No"
